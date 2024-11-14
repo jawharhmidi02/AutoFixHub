@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Fix Hub: Owner</title>
+    <link rel="stylesheet" href="ownerInterface.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body onload = "myLoad();loadName();owner()">
+    <header >
+        <div class="row row2">
+            <div class="box menu">
+                <div class="elements">
+                    <a href="home.html">Home</a>
+                    <a href="articles.html">Articles</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="ownerInterface.html">Admin Panel</a>
+                </div>
+                <div class="button">
+                    <button class="login" type="submit">Log Out</button>
+                </div>
+            </div>
+        </div>
+        <div class="firstline">
+           <p class="fix">Welcome</p><br>
+           <h1 class="auto"></h1><br>
+        </div>
+    </header>
+    <div class="addshop">
+        Add New Shop : <input type="button" value="Create Shop" class="addshopinterface">
+    </div>
+    <div class="repairshops">
+        <div class="shopscontainer">
+            <div class="container">
+                <div class="shop">
+                    
+                    <div class="name"></div>
+                    <div class="chiefname"><i class="fa fa-user"></i> </div>
+                    <div class="phonenumber"><i class="fa fa-phone"></i> </div>
+                    <div class="mail"><i class="fa fa-envelope"></i> </div>
+                    <div class="location"><i class="fa fa-map-marker"></i></div>
+                    <div class="buttons"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="shop">
+                    
+                    <div class="name"></div>
+                    <div class="chiefname"><i class="fa fa-user"></i> </div>
+                    <div class="phonenumber"><i class="fa fa-phone"></i> </div>
+                    <div class="mail"><i class="fa fa-envelope"></i> </div>
+                    <div class="location"><i class="fa fa-map-marker"></i> </div>
+                    <div class="buttons"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="shop">
+                    
+                    <div class="name"></div>
+                    <div class="chiefname"><i class="fa fa-user"></i> </div>
+                    <div class="phonenumber"><i class="fa fa-phone"></i> </div>
+                    <div class="mail"><i class="fa fa-envelope"></i> </div>
+                    <div class="location"><i class="fa fa-map-marker"></i> </div>
+                    <div class="buttons"></div>
+                </div>
+            </div>
+        </div>
+        <div class="shopscontainer">
+            <div class="container">
+                <div class="shop">
+                    
+                    <div class="name"></div>
+                    <div class="chiefname"><i class="fa fa-user"></i> </div>
+                    <div class="phonenumber"><i class="fa fa-phone"></i> </div>
+                    <div class="mail"><i class="fa fa-envelope"></i> </div>
+                    <div class="location"><i class="fa fa-map-marker"></i> </div>
+                    <div class="buttons"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="shop">
+                    
+                    <div class="name"></div>
+                    <div class="chiefname"><i class="fa fa-user"></i> </div>
+                    <div class="phonenumber"><i class="fa fa-phone"></i> </div>
+                    <div class="mail"><i class="fa fa-envelope"></i> </div>
+                    <div class="location"><i class="fa fa-map-marker"></i> </div>
+                    <div class="buttons"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="shop">
+                    
+                    <div class="name"></div>
+                    <div class="chiefname"><i class="fa fa-user"></i> </div>
+                    <div class="phonenumber"><i class="fa fa-phone"></i> </div>
+                    <div class="mail"><i class="fa fa-envelope"></i> </div>
+                    <div class="location"><i class="fa fa-map-marker"></i> </div>
+                    <div class="buttons"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pagecontroller">
+            <div class="prev"> < </div><div class="page">Page </div> <div class="numpage"> 1 </div> <div class="suiv"> > </div>
+        </div>
+    </div>
+    </div>
+    <div id="popupContainer" class="deletepopup">
+        <div id="popupContent" class="popupContent">
+            <p id="popuptext"></p>
+            <button id="cancelButton" class="Button"></button>
+            <button id="deleteButton" class="Button"></button>
+        </div>
+    </div>
+    <div id="editpopupContainer">
+        <div id="editpopupContent">
+            <p id="editpopuptext"></p>
+            <div class="chieftitle">Chief Details :</div>
+            <table class="chiefinputs">
+                <tr>
+                    <td>Full Name :</td>
+                    <td><input type="text" class="fullname"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number :</td>
+                    <td><input type="text" class="phonenumber"></td>
+                </tr>
+                <tr>
+                    <td>E-mail :</td>
+                    <td><input type="text" class="email"></td>
+                </tr>
+
+            </table>
+            <div class="shoptitle">Shop Details :</div>
+            <table class="shopinputs">
+                <tr>
+                    <td>Shop Name :</td>
+                    <td><input type="text" class="shopname"></td>
+                </tr>
+                <tr>
+                    <td>Address :</td>
+                    <td><input type="text" class="address"></td>
+                </tr>
+            </table>
+            <div class="editbuttons">
+                <button id="editcancelButton" class="editButton"></button>
+                <button id="editButton" class="editButton"></button>
+            </div>
+            
+        </div>
+    </div>
+    <div id="addpopupContainer">
+        <div id="addpopupContent">
+            <p id="addpopuptext"></p>
+            <div class="chieftitle">Chief Details :</div>
+            <table class="chiefinputs addchiefinputs">
+                <tr>
+                    <td>Full Name :</td>
+                    <td><input type="text" class="fullname"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number :</td>
+                    <td><input type="text" class="phonenumber"></td>
+                </tr>
+                <tr>
+                    <td>E-mail :</td>
+                    <td><input type="text" class="email"></td>
+                </tr>
+
+            </table>
+            <div class="shoptitle">Shop Details :</div>
+            <table class="shopinputs addshopinputs">
+                <tr>
+                    <td>Shop Name :</td>
+                    <td><input type="text" class="shopname"></td>
+                </tr>
+                <tr>
+                    <td>Address :</td>
+                    <td><input type="text" class="address"></td>
+                </tr>
+            </table>
+            <div class="addbuttons">
+                <button id="addcancelButton" class="addButton"></button>
+                <button id="addButton" class="addButton"></button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <footer>
+        <div class="details">
+            <div class="contactowner">
+                <div class="contactcompany"><h1>Contact the Company :</h1></div>
+                <div class="phonenumber"><i class="fa fa-phone"></i></div>
+                <div class="mail"><i class="fa fa-envelope"></i></div>
+            </div>
+            <div class="aboutcompany">
+                <h1>About the company :</h1>
+                <br><div class="lorem">
+                    Auto fix is a leading provider of automotive repair services all over Tunisia. With a commitment to excellence and customer satisfaction, we provide help the car need on road using <font style="text-decoration:underline;">Articles</font>.
+                    <br><br>For over several years, we have been dedicated to keeping our customers on the road safely and reliably. Experience the difference with Auto Fix and trust us with all your automotive repair needs.</div>
+            </div>
+        </div>
+    </footer>
+    <div class="none" style="display: none;">
+        <form class="form">
+            <input type="text" name="chiefname" class="chiefname">
+            <input type="text" class="ownername" name="ownername">
+            <input type="text" class="chiefemail" name="chiefemail">
+            <input type="text" name="message" class="message">
+            <input type="submit" class="formsubmit">
+        </form>
+        
+    </div>
+    <script src="https://kit.fontawesome.com/2ef84ee5e7.js" crossorigin="anonymous"></script>
+    <script src="ownerInterface.js"></script>
+    <script src="../ownerDisplay.js"></script>
+    <script src="../logout.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "YqQkyF-YG_Zc1lvyh",
+            });
+        })();
+    </script>
+</body>
+</html>

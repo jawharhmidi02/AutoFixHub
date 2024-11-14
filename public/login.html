@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Fix Hub: Login</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body onload = "owner()">
+    <header>
+        <div class="row row2">
+            <div class="box menu">
+                <div class="elements">
+                    <a href="index.html">Home</a>
+                    <a href="articles.html">Articles</a>
+                    <a href="contact.html">Contact</a>
+                    
+                </div>
+                <div class="button">
+                    <button class="login" type="submit">Log in</button>
+                </div>
+            </div>
+        </div>
+        <div class="firstline">
+           <center><h1>Login</h1></center>
+        </div>
+    </header>
+    <div class="loginpage">
+        <div class="logincontainer">
+            <h1 class="welcome">Welcome Team!</h1>
+            <h2>Sign in</h2>
+            <div class="username">
+                <i class="fa fa-user"></i><input id = "email" type="text" placeholder="E-mail">
+            </div>
+            
+            <div class="password">
+                <i class="fa fa-lock"></i><input id = "password"  type="password" placeholder="Password">
+            </div>
+            <div class="forgetpassword">
+                Forget Password?
+            </div>
+            <div class="submit">
+                <input id = "owner-login" type="submit" value="LOGIN">
+            </div>
+            <div id="popupContainer">
+                <div id="popupContent" >
+                    <p id="popuptext">Enter your Email : <input type="text" class="input"></p>
+                    <div class="buttons">
+                        <button id="cancelButton" class="Button"></button>
+                        <button id="deleteButton" class="Button"></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <div class="details">
+            <div class="contactowner">
+                <div class="contactcompany"><h1>Contact the Company :</h1></div>
+                <div class="phonenumber"><i class="fa fa-phone"></i></div>
+                <div class="mail"><i class="fa fa-envelope"></i></div>
+            </div>
+            <div class="aboutcompany">
+                <h1>About the company :</h1>
+                <br><div class="lorem">
+                    Auto fix is a leading provider of automotive repair services all over Tunisia. With a commitment to excellence and customer satisfaction, we provide help the car need on road using <font style="text-decoration:underline;">Articles</font>.
+                    <br><br>For over several years, we have been dedicated to keeping our customers on the road safely and reliably. Experience the difference with Auto Fix and trust us with all your automotive repair needs.</div>
+            </div>
+        </div>
+    </footer>
+    <div class="none" style="display: none;">
+        <form class="form">
+            <input type="text" name="chiefname" class="chiefname">
+            <input type="text" class="ownername" name="ownername">
+            <input type="text" class="chiefemail" name="chiefemail">
+            <input type="text" name="message" class="message">
+            <input type="submit" class="formsubmit">
+        </form>
+    </div>
+    <script src="login.js"></script>
+    <script src="../ownerDisplay.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "YqQkyF-YG_Zc1lvyh",
+            });
+        })();
+    </script>
+</body>
+</html>

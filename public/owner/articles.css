@@ -1,0 +1,450 @@
+body{
+    background-color: #8080803d;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+.menu{
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    border-radius: 5px;
+    padding: 0;
+    position: relative;
+}
+.elements, .button{
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    margin-left: 50px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: rgb(19, 24, 39);
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+.menu a:hover{
+    /* color: rgb(99, 99, 217); */
+    color: #ffa200;
+    
+}
+.login{
+    width: 150px;
+    height: 40px;
+    border-radius: 20pc;
+    background-color: #ff9900;
+    /* margin-left: 850px; */
+    /* margin-right: 70px; */
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.login:hover{
+    background-color: #ffbb00;
+    color: white;
+}
+.box{
+    flex: 1;
+}
+
+.firstline{
+    height: 600px;
+    background-image:linear-gradient(rgba(17, 18, 34, 0.741),rgba(17, 18, 31, 0.397)) ,url(../Auto-Repair.jpg) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    color: white;
+    letter-spacing: 10px;
+}
+.firstline center h1{
+    font-size: 80px;
+}
+
+/* body */
+
+.contentcontainer{
+    margin: 5% 7% 7% 7%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    /* background-color: red; */
+}
+.contentcontainer .searchcontainer{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin: 2% 0 2% 4%;
+    font-size: 24px;
+    color: rgb(56, 46, 129);
+}
+.contentcontainer .searchcontainer .search{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contentcontainer .searchcontainer .search .searchinput{
+    width: 54%;
+    height: 100%;
+    margin-left: 2%;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid rgb(56, 46, 129);
+}
+.contentcontainer .searchcontainer .search .searchbutton{
+    width: 18%;
+    border: 1px solid rgb(56, 46, 129);
+    height: 100%;
+    margin-left: 1%;
+    border-radius: 5px;
+    background-color: rgb(56, 46, 129);
+    color: #e0e0e0;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+.contentcontainer .searchcontainer .search .searchbutton:hover{
+    opacity: 0.7;
+    
+}
+.contentcontainer .searchcontainer .orderby{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 0px;
+}
+.contentcontainer .searchcontainer .orderby .updown{
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    align-self: start;
+    font-size: 20px;
+    background-color: #e0e0e0;
+    border: 0;
+    color: rgb(56, 46, 129);
+    border: 1px solid rgb(56, 46, 129);
+    cursor: pointer;
+    border-radius: 20%;
+    transition: 0.4s;
+}
+.contentcontainer .searchcontainer .orderby .updown:hover{
+    background-color: rgb(56, 46, 129);
+    color: #e0e0e0;
+}
+.contentcontainer .searchcontainer .orderby .updown .text{
+    transform: translateY(-4px);
+}
+.contentcontainer .searchcontainer .orderby .sortdiv{
+    display: flex;
+    align-items: center;
+}
+.contentcontainer .searchcontainer .orderby .orders{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    margin-top: 8px;
+    margin-left: 15px;
+    color: rgb(56, 46, 129, 0.6);
+}
+.ordercontainer {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 7px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+
+.ordercontainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    left: 0;
+    top: 2.5px;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.ordercontainer:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.ordercontainer input:checked ~ .checkmark {
+    background-color: rgb(56, 46, 129);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.ordercontainer input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.ordercontainer .checkmark:after {
+    top: 4.6px;
+    left: 4.6px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+}
+.contentcontainer .searchcontainer .latestpost .title{
+    margin-top: 8%;
+    font-size: 30px;
+}
+.contentcontainer .searchcontainer .latestpost hr{
+    color: rgb(56, 46, 129);
+    margin-bottom: 15px;
+}
+.contentcontainer .searchcontainer .latestpost .articles{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.contentcontainer .searchcontainer .latestpost .articles a{
+    color: rgba(56, 46, 129, 0.5);
+    text-decoration: none;
+    transition: text-underline-offset 0.4s;
+    margin-bottom: 5px !important;
+    position: relative;
+    
+}
+.contentcontainer .searchcontainer .latestpost .articles .a{
+    margin-bottom: 5px;
+}
+.contentcontainer .searchcontainer .latestpost .articles a:hover{
+    text-underline-offset: 10px;
+}
+.contentcontainer .searchcontainer .latestpost .articles a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(56, 46, 129, 0.3);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+.contentcontainer .searchcontainer .latestpost .articles a:hover::before {
+    transform: scaleX(1);
+}
+  
+.contentcontainer .articlenextprev{
+    display: grid;
+    grid-template-rows: 90% 10%;
+}
+.contentcontainer .articlecontainer{
+    /* background-color: grey; */
+    display: flex;
+    flex-direction: column;
+}
+.contentcontainer .articlecontainer .article{
+    width: 100%;
+    height: 150px;
+    display: none;
+    flex-direction: row;
+    margin-bottom: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.contentcontainer .articlecontainer .article5{
+    margin-bottom: 0 !important;
+}
+.contentcontainer .articlecontainer .article:hover{
+    transform: translateY(-10px) translateX(-10px);
+}
+.contentcontainer .articlecontainer .article .image{
+    width: 30%;
+}
+.contentcontainer .articlecontainer .article .image img{
+    border-radius: 20px;
+}
+.contentcontainer .articlecontainer .article .text{
+    width: 100%;
+    padding: 7px 20px 0 20px;
+}
+.contentcontainer .articlecontainer .article .text .title{
+    font-size: 26px;
+    color: rgb(56, 46, 129);
+    transition: 0.5s;
+}
+.contentcontainer .articlecontainer .article .text .title a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(56, 46, 129);
+}
+.contentcontainer .articlecontainer .article .text .title a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 0.1em ;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(56, 46, 129, 0.9);
+    transform: scaleX(0);
+    transition: transform 0.2s ease;
+}
+.contentcontainer .articlecontainer .article .text .title a.hovered::before {
+    transform: scaleX(1);
+
+}
+
+.contentcontainer .articlecontainer .article .text hr{
+    color: rgb(56, 46, 129);
+    opacity: 0.5;
+    margin-bottom: 20px;
+}
+.contentcontainer .articlecontainer .article .text .desc{
+    color: rgb(56, 46, 129);
+    opacity: 0.7;
+    margin-bottom: 14px;
+    font-size: 20px;
+}
+.contentcontainer .articlecontainer .article .text .daterate{
+    display: flex;
+    flex-direction: row;
+}
+.contentcontainer .articlecontainer .article .text .daterate .date{
+    color: rgb(56, 46, 129);
+    opacity: 0.7;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5px;
+    font-size: 18px;
+}
+.contentcontainer .articlecontainer .article .text .daterate .date .time{
+    margin-left: 4px;
+    display: flex;
+}
+.contentcontainer .articlecontainer .article .text .daterate .rate{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.contentcontainer .articlecontainer .article .text .daterate .rate .stars{
+    color: rgb(56, 46, 129);
+    opacity: 0.7;
+}
+.contentcontainer .articlecontainer .article .text .daterate .rate .checked{
+    color: orange;
+}
+.contentcontainer .articlecontainer .article .text .daterate .ratetext{
+    display: flex;
+    flex-direction: row;
+    color: rgb(56, 46, 129, 0.6);
+    font-size: 17px;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.contentcontainer .articlecontainer .article .text .daterate .ratetext .users{
+    margin-right: 3px;
+}
+
+/* next previous buttons */
+.pagecontroller{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+.prev, .suiv{
+    color: rgb(56, 46, 129);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(56, 46, 129);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20%;
+}
+.prev:hover,.suiv:hover{
+    background-color: rgb(56, 46, 129);
+    color: white;
+}
+.page, .numpage{
+    color: rgb(56, 46, 129);
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+.numpage{
+    padding-left: 10px;
+}
+.suiv{
+    margin-left: 20px;
+}
+/* Footer */
+footer{
+    background-color: rgba(29, 28, 28, 0.945);
+    height: 250px;
+    padding: 50px;
+    color: white;
+}
+footer .details{
+    /* margin: 50px; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+}
+footer .details .contactowner{
+    padding: 40px;
+    font-size: 30px;
+}
+footer .details .contactowner div{
+    margin-left: 70px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+footer .details .contactowner div:not(.contactcompany){
+    transform: translateY(-70px);
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: grey;
+    /* padding-left: 50px; */
+    /* color: grey; */
+}
+footer .details .contactowner .contactcompany{
+    font-size: 18px;
+    letter-spacing: 0;
+    transform: translateY(-70px);
+}
+footer .details .aboutcompany{
+    padding: 0px;
+    padding-right: 70px;
+    font-size: 20px;
+}
+footer .details .aboutcompany h1{
+    margin: 0 !important;
+    font-size: 36px;
+}
+footer .details .aboutcompany .lorem{
+    color: gray;
+}

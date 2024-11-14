@@ -1,0 +1,230 @@
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: #8080803d;
+    margin: 0;
+}
+.menu{
+    background-color: rgb(255, 255, 255);
+    height: 70px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    border-radius: 5px;
+    padding: 0;
+    position: relative;
+}
+.elements, .button{
+    display: flex;
+    align-items: center;
+}
+.menu a{
+    margin-left: 50px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: rgb(19, 24, 39);
+    font-size: 1.2rem;
+    transition: 0.5s;
+}
+.menu a:hover{
+    color: #ffa200;
+    
+}
+.login{
+    width: 150px;
+    height: 40px;
+    border-radius: 20pc;
+    background-color: #ff9900;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.login:hover{
+    background-color: #ffbb00;
+    color: white;
+}
+.box{
+    flex: 1;
+}
+.fix{
+    justify-content: center;
+    color: #fda728;
+    font-size: 30px;
+   
+}
+.auto{
+    color: #ffffff;
+    margin-top: 0px !important;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: calc(1.425rem + 2.1vw);
+}
+.firstline{
+    height: 600px;
+    background-image:linear-gradient(rgba(17, 18, 34, 0.741),rgba(17, 18, 31, 0.397)) ,url(../Auto-Repair.jpg) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.ok{
+    width: 170px;
+    height: 60px;
+    border-radius: 20pc;
+    background-color: #ff9900;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.ok:hover{
+    background-color: #ff7300;
+}
+.banner{
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    width: 400 px;
+    height:600px;
+}
+.about{
+    margin-top: 100px !important;
+    width: 63%;
+}
+h5{
+    margin-top: 0px;
+    margin-left: 70px;
+    font-size: 1.2rem;
+    color: #091358;
+    font-family: "Jost", sans-serif;
+}
+h5::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    margin-left: 120px;
+    margin-top: 19px;
+    background: #ff9900;
+}
+h5::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 3px;
+    margin-left: 70px;
+    margin-top: 19px;
+    background: #ff7300;
+}
+.h5::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 3px;
+    margin-left: 135px;
+    margin-top: 19px;
+    background: #ff9900;
+}
+.h5::after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 3px;
+    margin-left: 70px;
+    margin-top: 19px;
+    background: #ff7300;
+}
+.welcome{
+    margin-left: 70px;
+    color: #091E3E;
+    font-family: "Jost", sans-serif;
+    font-weight: 700;
+    font-size: calc(1.425rem + 2.1vw);
+}
+h4{
+    margin-left: 70px;
+    font-family: "Jost", sans-serif;
+    color: #6B6A75;
+    font-weight: 600 ;
+    font-size: 1.5rem;
+}
+.description{
+    margin-left: 70px;
+    margin-right: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6B6A75;
+}
+.readmore{
+    width: 170px;
+    height: 60px;
+    border-radius: 20pc;
+    background-color: #ff9900;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    border: none;
+    transition: 0.5s;
+    margin-left: 600px; 
+    cursor: pointer;
+}
+.readmore:hover{
+    background-color: #ff7300;
+}
+
+
+
+/* Foooterrrr */
+footer{
+    background-color: rgba(29, 28, 28, 0.945);
+    height: 250px;
+    padding: 50px;
+    color: white;
+}
+footer .details{
+    /* margin: 50px; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 100%;
+}
+footer .details .contactowner{
+    padding: 40px;
+    font-size: 30px;
+}
+footer .details .contactowner div{
+    margin-left: 70px;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+}
+footer .details .contactowner div:not(.contactcompany){
+    transform: translateY(-70px);
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: grey;
+    /* padding-left: 50px; */
+    /* color: grey; */
+}
+footer .details .contactowner .contactcompany{
+    font-size: 18px;
+    letter-spacing: 0;
+    transform: translateY(-70px);
+}
+footer .details .aboutcompany{
+    padding: 0px;
+    padding-right: 70px;
+    font-size: 20px;
+}
+footer .details .aboutcompany h1{
+    margin: 0 !important;
+    font-size: 36px;
+}
+footer .details .aboutcompany .lorem{
+    color: gray;
+}
